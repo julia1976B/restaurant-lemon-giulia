@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant lemon giulia</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root"></div>
+
+
+        <!-- Componente Header -->
+        <header className="header">
+            <img src="imagen-litle-lemon.jpg" alt="Little Lemon" />
+            <h1>Inicia Sesión</h1>
+            <span>Reserva tu Mesa con Nosotros <i className="arrow"></i></span>
+            <button>Contactanos Ahora</button>
+            <button>Plan de Reserva del Restaurante</button>
+        </header>
+
+        <!-- Componente Nav -->
+        <nav className="nav">
+            <h2>Orden para Entrega a Domicilio</h2>
+            <div className="menu-options">
+                <div className="menu-option">
+                    <span>Almuerzo</span>
+                    <i className="triangle"></i>
+                </div>
+                <div className="menu-option">
+                    <span>Plato Principal</span>
+                    <i className="triangle"></i>
+                </div>
+                <div className="menu-option">
+                    <span>Bebidas</span>
+                    <i className="triangle"></i>
+                </div>
+                <div className="menu-option">
+                    <span>Otros</span>
+                    <i className="triangle"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Componente carousel... -->
+
+        <div class="carousel">
+            <h2>Una Semana Llena de Sabor y Tradición que no Querrás Perderte</h2>
+        </div>
+        
+        <!-- Componente Main... -->
+
+        <main class="main">
+            <div class="menu-item">
+              <img src="menu-item-1.jpg" alt="Menu Item 1" />
+              <div class="menu-info">
+                <h3>Nombre del Menú</h3>
+                <p>Descripción del menú.</p>
+                <div class="price">$10</div>
+              </div>
+            </div>
+            <!-- Agregar dos elementos más similares -->
+          </main>
+          
+          <!-- Componente FormReserva... -->
+
+          <div class="form-container">
+            <form class="reservation-form">
+              <h3 class="form-title">Plan de Reserva del Restaurante</h3>
+              <div class="form-group">
+                <label for="date">Fecha</label>
+                <input type="date" id="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Hora</label>
+                <input type="time" id="time" required />
+              </div>
+              <div class="form-group">
+                <label for="guests">Número de Comensales</label>
+                <input type="number" id="guests" required />
+              </div>
+              <div class="seat-options">
+                <label>Estandar</label>
+                <input type="radio" name="seat" value="standard" required />
+                <label>Exterior</label>
+                <input type="radio" name="seat" value="outdoor" required />
+              </div>
+              <button class="submit-button">Confirmación de Reserva</button>
+            </form>
+          </div>
+
+          <!-- Componente FormCliente... -->
+          <div class="form-container">
+            <form class="client-info-form">
+              <h3 class="form-title">Información del Cliente</h3>
+              <label for="lastName">PRIMER APELLIDO</label>
+              <input type="text" id="lastName" placeholder="Campo Requerido" required />
+              <label for="firstName">NOMBRE</label>
+              <input type="text" id="firstName" placeholder="Campo Requerido" required />
+              <!-- Agregar el resto de los campos -->
+              <button class="submit-button">ENVIAR</button>
+            </form>
+          </div>
+
+          <!-- Componente FormDetallesReserva... -->
+
+          <div class="form-container">
+            <form class="reservation-details-form">
+              <h3 class="form-title">Detalles de Su Reserva</h3>
+              <label for="reservaDate">Fecha</label>
+              <input type="text" id="reservaDate" readOnly />
+              <!-- Agregar el resto de los campos -->
+              <button class="submit-button">ENVIAR</button>
+            </form>
+          </div>
+
+           <!-- Componente FormContacto... -->
+
+           <div class="form-container">
+            <form class="contact-form">
+              <h3 class="form-title">Contacto</h3>
+              <!-- Agregar el resto de los campos -->
+              <button class="submit-button">ENVIAR</button>
+            </form>
+          </div>
+
+           <!-- Componente Footer... -->
+           <footer class="footer">
+            <ul class="footer-menu">
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Quiénes Somos</a></li>
+              <li><a href="#">Contáctanos</a></li>
+              <li><a href="#">Reservas en Otros Restaurantes</a></li>
+              <li><a href="#">Política de Devolución</a></li>
+            </ul>
+          </footer>
+
+        
+    </div>
+
+    <!-- Cargar React y ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    
+
+    <!-- Tus componentes aquí -->
+    <script src="index.js"></script>
+
+    <script src="Header.js"></script>
+    <script src="Nav.js"></script>
+    <script src="Carousel.js"></script>
+    <script src="Main.js"></script>
+    <script src="FormReserva.js"></script>
+    <script src="FormCliente.js"></script>
+    <script src="FormDetallesReserva.js"></script>
+    <script src="FormContacto.js"></script>
+    <script src="Footer.js"></script>
+    <!-- Asegúrate de incluir los scripts para los demás componentes -->
+
+</body>
+</html>
+
+
+
